@@ -21,6 +21,7 @@ El proyecto surge con el objetivo de facilitar la gestión de los alquileres y m
 * Git
 * GitHub
 * Javascript
+* Node.js
 * React - Vite
 * React - Boopstrap
 
