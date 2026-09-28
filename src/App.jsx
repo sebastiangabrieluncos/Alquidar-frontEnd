@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import QueOfrecemos from "./components/landing/QueOfrecemos";
 
 function App() {
   return (
-    <div className="container py-4 ">
-      <h1>Alquidar</h1>
-      <p>Sistema de gestión de alquileres</p>
+    <div>
+      <QueOfrecemos></QueOfrecemos>
     </div>
   );
 }
