@@ -18,7 +18,6 @@ import {
 } from "react-icons/bs";
 
 function QueOfrecemos() {
-
   const [activeFeature, setActiveFeature] = useState("propiedades");
 
   const features = {
@@ -102,13 +101,10 @@ function QueOfrecemos() {
 
   return (
     <main>
-
       <section className="py-5">
         <Container className="py-lg-5">
-
           <Row className="justify-content-center text-center">
             <Col lg={8}>
-
               <Badge
                 bg="light"
                 text="primary"
@@ -122,46 +118,34 @@ function QueOfrecemos() {
               </h1>
 
               <p className="lead text-secondary mb-0">
-                Alquidar reúne en un solo lugar las herramientas que
-                necesitás para organizar propiedades, contratos, pagos
-                y vencimientos de manera simple y segura.
+                Alquidar reúne en un solo lugar las herramientas que necesitás
+                para organizar propiedades, contratos, pagos y vencimientos de
+                manera simple y segura.
               </p>
-
             </Col>
           </Row>
-
         </Container>
       </section>
 
-
       <section className="pb-5">
         <Container>
-
           <Row className="g-4 align-items-stretch">
-
             <Col lg={4}>
-
               <Card className="border-0 shadow-sm rounded-4 h-100 p-3">
-
                 <Card.Body>
-
                   <p className="text-secondary small fw-semibold mb-3">
                     CONOCÉ NUESTRAS FUNCIONES
                   </p>
 
                   <div className="d-flex flex-column gap-2">
-
                     <Button
                       variant="light"
                       className={`text-start border-0 rounded-3 p-3 ${
-                        activeFeature === "propiedades"
-                          ? "bg-light"
-                          : ""
+                        activeFeature === "propiedades" ? "bg-light" : ""
                       }`}
                       onClick={() => setActiveFeature("propiedades")}
                     >
                       <div className="d-flex align-items-center gap-3">
-
                         <span
                           className="fs-5"
                           style={{
@@ -183,21 +167,17 @@ function QueOfrecemos() {
                             Organizá tus inmuebles
                           </small>
                         </div>
-
                       </div>
                     </Button>
 
                     <Button
                       variant="light"
                       className={`text-start border-0 rounded-3 p-3 ${
-                        activeFeature === "contratos"
-                          ? "bg-light"
-                          : ""
+                        activeFeature === "contratos" ? "bg-light" : ""
                       }`}
                       onClick={() => setActiveFeature("contratos")}
                     >
                       <div className="d-flex align-items-center gap-3">
-
                         <span
                           className="fs-5"
                           style={{
@@ -211,29 +191,23 @@ function QueOfrecemos() {
                         </span>
 
                         <div>
-                          <div className="fw-semibold text-dark">
-                            Contratos
-                          </div>
+                          <div className="fw-semibold text-dark">Contratos</div>
 
                           <small className="text-secondary">
                             Centralizá tus contratos
                           </small>
                         </div>
-
                       </div>
                     </Button>
 
                     <Button
                       variant="light"
                       className={`text-start border-0 rounded-3 p-3 ${
-                        activeFeature === "pagos"
-                          ? "bg-light"
-                          : ""
+                        activeFeature === "pagos" ? "bg-light" : ""
                       }`}
                       onClick={() => setActiveFeature("pagos")}
                     >
                       <div className="d-flex align-items-center gap-3">
-
                         <span
                           className="fs-5"
                           style={{
@@ -247,29 +221,23 @@ function QueOfrecemos() {
                         </span>
 
                         <div>
-                          <div className="fw-semibold text-dark">
-                            Pagos
-                          </div>
+                          <div className="fw-semibold text-dark">Pagos</div>
 
                           <small className="text-secondary">
                             Controlá tus operaciones
                           </small>
                         </div>
-
                       </div>
                     </Button>
 
                     <Button
                       variant="light"
                       className={`text-start border-0 rounded-3 p-3 ${
-                        activeFeature === "inquilinos"
-                          ? "bg-light"
-                          : ""
+                        activeFeature === "inquilinos" ? "bg-light" : ""
                       }`}
                       onClick={() => setActiveFeature("inquilinos")}
                     >
                       <div className="d-flex align-items-center gap-3">
-
                         <span
                           className="fs-5"
                           style={{
@@ -291,21 +259,17 @@ function QueOfrecemos() {
                             Información siempre organizada
                           </small>
                         </div>
-
                       </div>
                     </Button>
 
                     <Button
                       variant="light"
                       className={`text-start border-0 rounded-3 p-3 ${
-                        activeFeature === "alertas"
-                          ? "bg-light"
-                          : ""
+                        activeFeature === "alertas" ? "bg-light" : ""
                       }`}
                       onClick={() => setActiveFeature("alertas")}
                     >
                       <div className="d-flex align-items-center gap-3">
-
                         <span
                           className="fs-5"
                           style={{
@@ -319,51 +283,34 @@ function QueOfrecemos() {
                         </span>
 
                         <div>
-                          <div className="fw-semibold text-dark">
-                            Alertas
-                          </div>
+                          <div className="fw-semibold text-dark">Alertas</div>
 
                           <small className="text-secondary">
                             No olvides ninguna fecha
                           </small>
                         </div>
-
                       </div>
                     </Button>
-
                   </div>
-
                 </Card.Body>
-
               </Card>
-
             </Col>
 
-
             <Col lg={8}>
-
               <Card
                 className="border-0 shadow-sm rounded-4 h-100 overflow-hidden"
                 style={{
                   backgroundColor: selectedFeature.lightColor,
                 }}
               >
-
                 <Card.Body className="p-4 p-lg-5">
-
-
                   <div className="d-flex justify-content-between align-items-start mb-4">
-
                     <div>
-
-                      <small className="text-secondary">
-                        VISTA PREVIA
-                      </small>
+                      <small className="text-secondary">VISTA PREVIA</small>
 
                       <h3 className="fw-bold text-dark mt-1 mb-0">
                         {selectedFeature.title}
                       </h3>
-
                     </div>
 
                     <div
@@ -374,9 +321,7 @@ function QueOfrecemos() {
                         color: selectedFeature.color,
                       }}
                     >
-                      <span className="fs-5">
-                        {selectedFeature.icon}
-                      </span>
+                      <span className="fs-5">{selectedFeature.icon}</span>
                     </div>
                   </div>
 
@@ -384,13 +329,9 @@ function QueOfrecemos() {
                     {selectedFeature.description}
                   </p>
 
-
                   <Card className="border-0 rounded-4 shadow-sm bg-white">
-
                     <Card.Body className="p-4">
-
                       <div className="d-flex justify-content-between align-items-center mb-4">
-
                         <div>
                           <small className="text-secondary">
                             {selectedFeature.dateLabel}
@@ -407,20 +348,14 @@ function QueOfrecemos() {
                         >
                           {selectedFeature.status}
                         </Badge>
-
                       </div>
 
-
                       <div className="border-top pt-4">
-
                         <small className="text-secondary">
-                          {activeFeature === "pagos"
-                            ? "Monto"
-                            : "Información"}
+                          {activeFeature === "pagos" ? "Monto" : "Información"}
                         </small>
 
                         <div className="d-flex justify-content-between align-items-center">
-
                           <span className="fw-semibold text-dark">
                             {selectedFeature.previewTitle}
                           </span>
@@ -433,17 +368,12 @@ function QueOfrecemos() {
                           >
                             {selectedFeature.price}
                           </span>
-
                         </div>
-
                       </div>
-
                     </Card.Body>
-
                   </Card>
 
                   <div className="mt-4">
-
                     <div className="d-flex align-items-center gap-2 mb-2">
                       <BsCheckCircleFill
                         style={{ color: selectedFeature.color }}
@@ -461,27 +391,18 @@ function QueOfrecemos() {
                         Gestión simple y organizada
                       </span>
                     </div>
-
                   </div>
-
                 </Card.Body>
-
               </Card>
-
             </Col>
-
           </Row>
-
         </Container>
       </section>
 
-
       <section className="py-5 bg-light">
         <Container className="py-lg-4">
-
           <Row className="justify-content-center text-center">
             <Col lg={8}>
-
               <p className="text-primary fw-semibold small mb-2">
                 TODO CONECTADO
               </p>
@@ -491,23 +412,18 @@ function QueOfrecemos() {
               </h2>
 
               <p className="text-secondary mb-5">
-                Alquidar conecta cada parte de la gestión para que
-                tengas toda la información que necesitás en un solo lugar.
+                Alquidar conecta cada parte de la gestión para que tengas toda
+                la información que necesitás en un solo lugar.
               </p>
-
             </Col>
           </Row>
 
-
           <Row className="justify-content-center align-items-center g-3">
-
             <Col xs={12} sm="auto">
               <Card className="border-0 shadow-sm rounded-4">
                 <Card.Body className="px-4 py-3 text-center">
                   <BsHouse className="text-primary me-2" />
-                  <span className="fw-semibold">
-                    Propiedades
-                  </span>
+                  <span className="fw-semibold">Propiedades</span>
                 </Card.Body>
               </Card>
             </Col>
@@ -520,9 +436,7 @@ function QueOfrecemos() {
               <Card className="border-0 shadow-sm rounded-4">
                 <Card.Body className="px-4 py-3 text-center">
                   <BsFileEarmarkText className="text-primary me-2" />
-                  <span className="fw-semibold">
-                    Contratos
-                  </span>
+                  <span className="fw-semibold">Contratos</span>
                 </Card.Body>
               </Card>
             </Col>
@@ -535,9 +449,7 @@ function QueOfrecemos() {
               <Card className="border-0 shadow-sm rounded-4">
                 <Card.Body className="px-4 py-3 text-center">
                   <BsCreditCard className="text-primary me-2" />
-                  <span className="fw-semibold">
-                    Pagos
-                  </span>
+                  <span className="fw-semibold">Pagos</span>
                 </Card.Body>
               </Card>
             </Col>
@@ -550,37 +462,29 @@ function QueOfrecemos() {
               <Card className="border-0 shadow-sm rounded-4">
                 <Card.Body className="px-4 py-3 text-center">
                   <BsBell className="text-primary me-2" />
-                  <span className="fw-semibold">
-                    Alertas
-                  </span>
+                  <span className="fw-semibold">Alertas</span>
                 </Card.Body>
               </Card>
             </Col>
-
           </Row>
-
         </Container>
       </section>
 
       <section className="py-5">
         <Container className="py-lg-5">
-
           <Card
             className="border-0 rounded-4 overflow-hidden"
             style={{
               backgroundColor: "#14213D",
             }}
           >
-
             <Card.Body className="p-4 p-md-5 text-center">
-
               <h2 className="text-white fw-bold mb-3">
                 Simplificá hoy la gestión de tus propiedades
               </h2>
 
               <p className="text-white-50 mb-4">
-                Organizá tus propiedades, contratos y pagos
-                desde un solo lugar.
+                Organizá tus propiedades, contratos y pagos desde un solo lugar.
               </p>
 
               <Button
@@ -590,14 +494,10 @@ function QueOfrecemos() {
                 Comenzar ahora
                 <BsArrowRight className="ms-2" />
               </Button>
-
             </Card.Body>
-
           </Card>
-
         </Container>
       </section>
-
     </main>
   );
 }
