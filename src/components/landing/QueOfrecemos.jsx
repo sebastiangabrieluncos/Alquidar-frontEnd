@@ -340,10 +340,6 @@ function QueOfrecemos() {
             </Col>
 
 
-            {/* =========================
-                PREVISUALIZACIÓN
-            ========================== */}
-
             <Col lg={8}>
 
               <Card
@@ -355,7 +351,6 @@ function QueOfrecemos() {
 
                 <Card.Body className="p-4 p-lg-5">
 
-                  {/* Encabezado preview */}
 
                   <div className="d-flex justify-content-between align-items-start mb-4">
 
@@ -383,18 +378,12 @@ function QueOfrecemos() {
                         {selectedFeature.icon}
                       </span>
                     </div>
-
                   </div>
-
-
-                  {/* Descripción */}
 
                   <p className="text-secondary mb-4">
                     {selectedFeature.description}
                   </p>
 
-
-                  {/* Mini dashboard */}
 
                   <Card className="border-0 rounded-4 shadow-sm bg-white">
 
@@ -453,9 +442,6 @@ function QueOfrecemos() {
 
                   </Card>
 
-
-                  {/* Checks */}
-
                   <div className="mt-4">
 
                     <div className="d-flex align-items-center gap-2 mb-2">
@@ -489,10 +475,6 @@ function QueOfrecemos() {
         </Container>
       </section>
 
-
-      {/* =====================================================
-          TODO CONECTADO
-      ====================================================== */}
 
       <section className="py-5 bg-light">
         <Container className="py-lg-4">
@@ -579,11 +561,6 @@ function QueOfrecemos() {
 
         </Container>
       </section>
-
-
-      {/* =====================================================
-          CTA FINAL
-      ====================================================== */}
 
       <section className="py-5">
         <Container className="py-lg-5">
